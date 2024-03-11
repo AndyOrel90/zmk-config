@@ -6,10 +6,4 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: gr8_left
-  - board: seeeduino_xiao_ble
-    shield: gr8_right
-  - board: seeeduino_xiao_ble
-    shield: big_gr8_left
-  - board: seeeduino_xiao_ble
-    shield: big_gr8_right
+    shield: artsey_left
