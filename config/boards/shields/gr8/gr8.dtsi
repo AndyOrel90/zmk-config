@@ -1,0 +1,83 @@
+#include <dt-bindings/zmk/matrix_transform.h>
+/*
+/ {
+
+	chosen {
+		zmk,kscan = &kscan0;
+		zmk,matrix_transform = &default_transform;
+	};
+
+	default_transform: keymap_transform_0 {
+		compatible = "zmk,matrix-transform";
+		columns = <4>;
+		rows = <1>;
+		map = <
+            RC(0,0)  RC(0,1)  RC(0,2)  RC(0,3)
+            RC(0,4)  RC(0,5)  RC(0,6)  RC(0,7)
+		>;
+	};
+
+	kscan0: kscan {
+		compatible = "zmk,kscan-gpio-direct";
+		label = "KSCAN";
+		input-gpios =
+		    <&pro_micro 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
+		    <&pro_micro 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
+		    <&pro_micro 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
+		    <&pro_micro 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
+		    <&pro_micro 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
+		    <&pro_micro 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
+		    <&pro_micro 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
+		    <&pro_micro 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+		;
+	};	
+
+};
+*/
+/ {
+    chosen {
+        zephyr,console = &cdc_acm_uart;
+        zmk,battery = &vbatt;
+    };
+
+    vbatt: vbatt {
+        compatible = "zmk,battery-voltage-divider";
+        io-channels = <&adc 7>;
+        power-gpios = <&gpio0 14 (GPIO_OPEN_DRAIN | GPIO_ACTIVE_LOW)>;
+        output-ohms = <510000>;
+        full-ohms = <(1000000 + 510000)>;
+    };
+};
+
+&adc {
+    status = "okay";
+};
+
+&usbd {
+    cdc_acm_uart: cdc_acm_uart {
+        compatible = "zephyr,cdc-acm-uart";
+    };
+};
+
+&qspi {
+    status = "okay";
+    pinctrl-0 = <&qspi_default>;
+    pinctrl-1 = <&qspi_sleep>;
+    pinctrl-names = "default", "sleep";
+    p25q16h: p25q16h@0 {
+        compatible = "nordic,qspi-nor";
+        reg = <0>;
+        sck-frequency = <104000000>;
+        quad-enable-requirements = "S2B1v1";
+        jedec-id = [85 60 15];
+        sfdp-bfp = [
+            e5 20 f1 ff  ff ff ff 00  44 eb 08 6b  08 3b 80 bb
+            ee ff ff ff  ff ff 00 ff  ff ff 00 ff  0c 20 0f 52
+            10 d8 08 81
+        ];
+        size = <16777216>;
+        has-dpd;
+        t-enter-dpd = <3000>;
+        t-exit-dpd = <8000>;
+    };
+};
