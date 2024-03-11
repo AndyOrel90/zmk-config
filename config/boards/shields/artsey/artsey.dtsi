@@ -85,7 +85,7 @@
         compatible = "zephyr,cdc-acm-uart";
     };
 };
-
+/*
 &qspi {
     status = "okay";
     pinctrl-0 = <&qspi_default>;
@@ -108,3 +108,4 @@
         t-exit-dpd = <8000>;
     };
 };
+*/
