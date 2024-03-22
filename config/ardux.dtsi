@@ -419,9 +419,9 @@
 			label = "BT";
 			bindings = <
 				LEADING_NONES
-				ARTSEY_BT_TOP    &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0
+				ARDUX_BT_TOP    &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0
 				MIDDLE_NONES
-				ARTSEY_BT_BOTTOM &bt BT_SEL 5 &bt BT_SEL 4 &bt BT_SEL 3
+				ARDUX_BT_BOTTOM &bt BT_SEL 5 &bt BT_SEL 4 &bt BT_SEL 3
 				TRAILING_NONES
 			>;
 		};
@@ -542,9 +542,9 @@
 			label = "BT";
 			bindings = <
 				LEADING_NONES
-				ARTSEY_BT_TOP    &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0
+				ARDUX_BT_TOP    &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0
 				MIDDLE_NONES
-				ARTSEY_BT_BOTTOM &bt BT_SEL 5 &bt BT_SEL 4 &bt BT_SEL 3
+				ARDUX_BT_BOTTOM &bt BT_SEL 5 &bt BT_SEL 4 &bt BT_SEL 3
 				TRAILING_NONES
 			>;
 		};
