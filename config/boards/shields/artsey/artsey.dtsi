@@ -42,13 +42,16 @@
         zmk,matrix_transform = &default_transform;
     };
 
-    vbatt: vbatt {
+    /*vbatt: vbatt {
         compatible = "zmk,battery-voltage-divider";
         io-channels = <&adc 7>;
         power-gpios = <&gpio0 14 (GPIO_OPEN_DRAIN | GPIO_ACTIVE_LOW)>;
         output-ohms = <510000>;
         full-ohms = <(1000000 + 510000)>;
-    };
+    };*/
+	vbatt: vbatt {
+        compatible = "zmk,battery-voltage-divider";
+	};
 
     default_transform: keymap_transform_0 {
 		compatible = "zmk,matrix-transform";
@@ -75,11 +78,11 @@
 		;
 	};	
 };
-
+/*
 &adc {
     status = "okay";
 };
-
+*/
 &usbd {
     cdc_acm_uart: cdc_acm_uart {
         compatible = "zephyr,cdc-acm-uart";
