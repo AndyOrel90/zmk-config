@@ -187,7 +187,7 @@
 #define ARDUX_BASE_O O
 #define ARDUX_COMBO_N N
 #if ARDUX_COLEMAK
-#define ARDUX_BASE_A T
+/*#define ARDUX_BASE_A T
 #define ARDUX_BASE_R S
 #define ARDUX_BASE_T R
 #define ARDUX_BASE_S A
@@ -195,6 +195,20 @@
 #define ARDUX_BASE_Y E
 #define ARDUX_BASE_I I
 #define ARDUX_BASE_O O
+#define ARDUX_COMBO_N Y*/
+
+//ARTS
+//EYIO
+//OIEN
+//ARST
+#define ARDUX_BASE_A O
+#define ARDUX_BASE_R I
+#define ARDUX_BASE_T E
+#define ARDUX_BASE_S N
+#define ARDUX_BASE_E A
+#define ARDUX_BASE_Y R
+#define ARDUX_BASE_I S
+#define ARDUX_BASE_O T
 #define ARDUX_COMBO_N Y
 #endif
 
@@ -242,9 +256,9 @@
 		//combo_fwd        { layers = <LAYER_ID_MOUSE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_R>; bindings = <&kp RG(RBKT)>; };
 
 		combo_b           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_O>; bindings = <&kp B>; };
-		combo_c           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_R>; bindings = <&kp C>; };
+		combo_c           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_Y>; bindings = <&kp C>; };
 		combo_n           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_O>; bindings = <&kp ARDUX_COMBO_N>; };
-		combo_f           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_Y>; bindings = <&kp F>; };
+		combo_f           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_R>; bindings = <&kp F>; };
 		combo_g           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_T>; bindings = <&kp G>; };
 		combo_u           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_Y KEY_I>; bindings = <&kp U>; };
 		combo_h           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_I>; bindings = <&kp H>; };
