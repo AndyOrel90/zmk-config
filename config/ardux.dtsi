@@ -187,7 +187,7 @@
 #define ARDUX_BASE_O O
 #define ARDUX_COMBO_N N
 #if ARDUX_COLEMAK
-#define ARDUX_BASE_A T
+/*#define ARDUX_BASE_A T
 #define ARDUX_BASE_R S
 #define ARDUX_BASE_T R
 #define ARDUX_BASE_S A
@@ -196,12 +196,12 @@
 #define ARDUX_BASE_I I
 #define ARDUX_BASE_O O
 #define ARDUX_COMBO_N Y
-
+*/
 //ARTS
 //EYIO
 //OIEN
 //ARST
-/*
+
 #define ARDUX_BASE_A N
 #define ARDUX_BASE_R E
 #define ARDUX_BASE_T I
@@ -210,7 +210,7 @@
 #define ARDUX_BASE_Y S
 #define ARDUX_BASE_I R
 #define ARDUX_BASE_O A
-#define ARDUX_COMBO_N Y*/
+#define ARDUX_COMBO_N Y
 #endif
 
 /*****************************************
@@ -242,7 +242,7 @@
 		#if defined ARDUX_BIG
 		combo_layer_functions { key-positions = <KEY_F_TOP KEY_F_BOTTOM>; bindings = <&sl LAYER_ID_BIG_FUNCTION>; };
 		#endif
-		combo_enter      { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_E>; bindings = <&kp ENTER>; };
+		combo_enter      { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_S KEY_O>; bindings = <&kp ENTER>; };
 		combo_control    { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_S>; bindings = <&sk LCTRL>; };
 		combo_gui        { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_Y KEY_S>; bindings = <&sk LGUI>; };
 		combo_alt        { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_S>; bindings = <&sk LALT>; };
