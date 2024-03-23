@@ -8,15 +8,15 @@
 #define ARDUX_LEFT 1
 
 // ARTS Row
-#define KEY_A 4 //N
-#define KEY_R 5 //E
-#define KEY_T 6 //I
-#define KEY_S 7 //O
+#define KEY_A 0 //N
+#define KEY_R 1 //E
+#define KEY_T 2 //I
+#define KEY_S 3 //O
 // EYIO Row
-#define KEY_E 0 //A
-#define KEY_Y 1 //R
-#define KEY_I 2 //S
-#define KEY_O 3 //T
+#define KEY_E 4 //A
+#define KEY_Y 5 //R
+#define KEY_I 6 //S
+#define KEY_O 7 //T
 
 // Define Offsets
 #define LEADING_NONES NONE(0,0,0)
