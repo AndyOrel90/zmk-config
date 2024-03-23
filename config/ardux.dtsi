@@ -201,14 +201,14 @@
 //EYIO
 //OIEN
 //ARST
-#define ARDUX_BASE_A O
-#define ARDUX_BASE_R I
-#define ARDUX_BASE_T E
-#define ARDUX_BASE_S N
-#define ARDUX_BASE_E A
-#define ARDUX_BASE_Y R
-#define ARDUX_BASE_I S
-#define ARDUX_BASE_O T
+#define ARDUX_BASE_A N
+#define ARDUX_BASE_R E
+#define ARDUX_BASE_T I
+#define ARDUX_BASE_S O
+#define ARDUX_BASE_E T
+#define ARDUX_BASE_Y S
+#define ARDUX_BASE_I R
+#define ARDUX_BASE_O A
 #define ARDUX_COMBO_N Y
 #endif
 
