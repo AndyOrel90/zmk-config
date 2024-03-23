@@ -5,8 +5,7 @@
 #include <dt-bindings/zmk/mouse.h>
 
 // Left/Right
-//#define ARDUX_LEFT 1
-#define ARDUX_RIGHT 1
+#define ARDUX_LEFT 1
 
 // ARTS Row
 #define KEY_A 0
