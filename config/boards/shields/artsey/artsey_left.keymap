@@ -28,9 +28,9 @@
 			label = "Custom";                                                 \
 			bindings = <                                                      \
 				LEADING_NONES                                                 \
-				&mo LAYER_ID_CUSTOM  &kp C_VOL_UP  &kp LG(LBKT)   &kp RG(RBKT) \
+				&none  &kp C_VOL_UP  &kp LG(LBKT)   &kp RG(RBKT) \
 				MIDDLE_NONES                                                  \
-				&none   &kp C_VOL_DN  &kp LG(LBRC)   &kp RG(RBRC) \
+				&mo LAYER_ID_CUSTOM   &kp C_VOL_DN  &kp LG(LBRC)   &kp RG(RBRC) \
 				TRAILING_NONES                                                \
 			>;                                                                \
 		};
