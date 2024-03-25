@@ -34,7 +34,6 @@
 				TRAILING_NONES                                                \
 			>;                                                                \
 		};
-#endif
 
 // Include main ardux.io keymap
 #include "../../../ardux.dtsi"
