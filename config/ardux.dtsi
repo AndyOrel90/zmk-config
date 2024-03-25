@@ -278,7 +278,7 @@
 		combo_seven { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_T>; bindings = <&kp N7>; };
 		combo_eight { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_S KEY_T>; bindings = <&kp N8>; };
 		combo_nine  { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_O>; bindings = <&kp N9>; };
-		combo_zero  { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_Y KEY_O>; bindings = <&kp N0>; };
+		combo_zero  { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_Y KEY_I>; bindings = <&kp N0>; };
 
 		combo_lt     { layers = <LAYER_ID_PARENTHETICALS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_R>; bindings = <&kp LT>; };	
 		combo_gt     { layers = <LAYER_ID_PARENTHETICALS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_T KEY_S>; bindings = <&kp GT>; };
@@ -309,7 +309,7 @@
 		combo_bt_clr { layers = <LAYER_ID_BT_SEL>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_I KEY_Y KEY_E>; bindings = <&bt BT_CLR>; };
 
 		combo_num_period  { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_R KEY_T KEY_S>; bindings = <&kp PERIOD>; };
-		combo_num_comma   { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_Y KEY_I KEY_O>; bindings = <&kp N0>; };
+		combo_num_comma   { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_Y KEY_I KEY_O>; bindings = <&kp COMMA>; };
 
 		combo_percent  { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_R KEY_T>; bindings = <&kp PERCENT>; };
 		combo_plus     { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_E KEY_Y KEY_I>; bindings = <&kp PLUS>; };
@@ -526,9 +526,9 @@
 			label = "ARDUX";
 			bindings = <
 				LEADING_NONES
-				&layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_S        &kp ARDUX_BASE_T     &kp ARDUX_BASE_R     &layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_A
+				&layer_custom_kp LAYER_ID_NUMBERS ARDUX_BASE_S        &kp ARDUX_BASE_T     &kp ARDUX_BASE_R     &layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_A
 				MIDDLE_NONES
-				&layer_custom_kp LAYER_ID_CUSTOM ARDUX_BASE_O          &kp ARDUX_BASE_I     &kp ARDUX_BASE_Y     &layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_E
+				&layer_numbers_kp LAYER_ID_CUSTOM ARDUX_BASE_O          &kp ARDUX_BASE_I     &kp ARDUX_BASE_Y     &layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_E
 				TRAILING_NONES
 				#if defined CUSTOM_THUMB
 				CUSTOM_THUMB
