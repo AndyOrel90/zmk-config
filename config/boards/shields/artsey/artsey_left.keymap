@@ -23,5 +23,18 @@
 #define MIDDLE_NONES NONE(0, 0, 0)
 #define TRAILING_NONES NONE(0, 0, 0)
 
+#define ARDUX_LAYER_CUSTOM                                                   \
+		custom {                                                              \
+			label = "Custom";                                                 \
+			bindings = <                                                      \
+				LEADING_NONES                                                 \
+				&mo LAYER_ID_CUSTOM  &kp C_VOL_UP  &kp LG(LBKT)   &kp RG(RBKT) \
+				MIDDLE_NONES                                                  \
+				&none   &kp C_VOL_DN  &kp LG(LBRC)   &kp RG(RBRC) \
+				TRAILING_NONES                                                \
+			>;                                                                \
+		};
+#endif
+
 // Include main ardux.io keymap
 #include "../../../ardux.dtsi"
