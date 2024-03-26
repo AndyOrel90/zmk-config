@@ -547,7 +547,7 @@
 			label = "Symbol";
 			bindings = <
 				LEADING_NONES
-				&kp DOLLAR  &kp ASTERISK  &kp UNDERSCORE  &kp none
+				&kp DOLLAR  &kp ASTERISK  &kp UNDERSCORE  &none
 				MIDDLE_NONES
 				&kp HASH  &kp EQUAL  &kp MINUS  &mo LAYER_ID_SYMBOLS
 				TRAILING_NONES
