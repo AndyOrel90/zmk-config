@@ -291,6 +291,9 @@
 		combo_pipe      { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_Y KEY_E>; bindings = <&kp PIPE>; };
 		combo_ampersand { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_Y KEY_I>; bindings = <&kp AMPERSAND>; };
 		combo_percent  { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_E>; bindings = <&kp PERCENT>; };
+		combo_plus     { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_Y>; bindings = <&kp PLUS>; };
+		
+		combo_grave  { layers = <LAYER_ID_PARENTHETICALS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_T KEY_I>; bindings = <&kp GRAVE>; };
 		/*****************************************
 		 * 3 key combos
 		 *****************************************/
@@ -314,7 +317,7 @@
 		//combo_percent  { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_R KEY_T>; bindings = <&kp PERCENT>; };
 		//combo_plus     { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_E KEY_Y KEY_I>; bindings = <&kp PLUS>; };
 
-		combo_grave  { layers = <LAYER_ID_PARENTHETICALS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_R KEY_T>; bindings = <&kp GRAVE>; };		
+		//combo_grave  { layers = <LAYER_ID_PARENTHETICALS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_R KEY_T>; bindings = <&kp GRAVE>; };		
 
 		combo_bt_clr { layers = <LAYER_ID_BT_SEL>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_Y KEY_I KEY_O>; bindings = <&bt BT_CLR>; };
 		/*****************************************
