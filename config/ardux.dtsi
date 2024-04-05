@@ -296,7 +296,7 @@
 		/*****************************************
 		 * 3 key combos
 		 *****************************************/
-		combo_layer_navigation { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_Y KEY_T KEY_O>; bindings = <&tog LAYER_ID_NAVIGATION>; };
+		combo_layer_navigation { timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_Y KEY_T KEY_O>; bindings = <&tog LAYER_ID_NAVIGATION>; };
 		combo_esc              { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_E KEY_T KEY_S>; bindings = <&kp ESC>; };
 
 		combo_shift     { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_T KEY_S>; bindings = <&sk LSHFT>; };
@@ -307,8 +307,8 @@
 		combo_d            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_S KEY_R KEY_T>; bindings = <&kp D>; };
 		combo_p            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_E KEY_Y KEY_O>; bindings = <&kp P>; };
 		combo_q            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_R KEY_S>; bindings = <&kp Q>; };
-		combo_x            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_R KEY_T>; bindings = <&kp X>; };
-		combo_l            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_Y KEY_I KEY_O>; bindings = <&kp L>; };
+		combo_x            { timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_R KEY_T>; bindings = <&kp X>; };
+		combo_l            { timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_Y KEY_I KEY_O>; bindings = <&kp L>; };
 		combo_single_quote { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_S KEY_Y KEY_I>; bindings = <&kp SQT>; };
 		combo_double_quote { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_S KEY_Y KEY_E>; bindings = <&kp DQT>; };
 		combo_qmark        { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_E KEY_R KEY_S>; bindings = <&kp QMARK>; };
