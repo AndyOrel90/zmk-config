@@ -296,6 +296,7 @@
 		/*****************************************
 		 * 3 key combos
 		 *****************************************/
+		combo_layer_navigation { timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_Y KEY_T KEY_O>; bindings = <&tog LAYER_ID_NAVIGATION>; };
 		combo_esc              { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_E KEY_T KEY_S>; bindings = <&kp ESC>; };
 
 		combo_shift     { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_T KEY_S>; bindings = <&sk LSHFT>; };
@@ -320,7 +321,6 @@
 
 		combo_bt_clr { layers = <LAYER_ID_BT_SEL>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_E KEY_I KEY_O>; bindings = <&bt BT_CLR>; };
 
-		combo_layer_navigation { timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_Y KEY_T KEY_O>; bindings = <&tog LAYER_ID_NAVIGATION>; };
 		/*****************************************
 		 * 4 key combos
 		 *****************************************/
