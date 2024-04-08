@@ -30,7 +30,7 @@
 				LEADING_NONES                                                 \
 				&mo LAYER_ID_CUSTOM  &kp LC(A)  &kp LC(Z)   &kp LC(C) \
 				MIDDLE_NONES                                                  \
-				&none   &kp PSCRN  &kp LC(Y)   &kp LC(P) \
+				&none   &kp LC(X)  &kp LC(Y)   &kp LC(V) \
 				TRAILING_NONES                                                \
 			>;                                                                \
 		};

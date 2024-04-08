@@ -166,7 +166,7 @@
 				LEADING_NONES                                                 \
 				&mo LAYER_ID_CUSTOM  &kp LC(A)  &kp LC(Z)   &kp LC(C) \
 				MIDDLE_NONES                                                  \
-				&none   &kp PSCRN  &kp LC(Y)   &kp LC(P) \
+				&none   &kp LC(X)  &kp LC(Y)   &kp LC(V) \
 				TRAILING_NONES                                                \
 			>;                                                                \
 		};
@@ -322,6 +322,7 @@
 
 		combo_bt_clr { layers = <LAYER_ID_BT_SEL>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_Y KEY_I KEY_O>; bindings = <&bt BT_CLR>; };
 
+		combo_print_scrn  { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_R KEY_T KEY_S>; bindings = <&kp PSCRN>; };
 		/*****************************************
 		 * 4 key combos
 		 *****************************************/
