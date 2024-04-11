@@ -321,7 +321,7 @@
 		//combo_grave  { layers = <LAYER_ID_PARENTHETICALS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_R KEY_T>; bindings = <&kp GRAVE>; };		
 
 		combo_bt_clr     { layers = <LAYER_ID_BT_SEL>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_R KEY_T KEY_S>; bindings = <&bt BT_CLR>; };
-		combo_bt_clr_all { layers = <LAYER_ID_BT_SEL>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_Y KEY_I KEY_O>; bindings = <&bt BT_CLR_ALL>; };
+		//combo_bt_clr_all { layers = <LAYER_ID_BT_SEL>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_Y KEY_I KEY_O>; bindings = <&bt BT_CLR_ALL>; };
 
 		combo_print_scrn  { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_R KEY_T KEY_S>; bindings = <&kp PSCRN>; };
 		/*****************************************
@@ -353,6 +353,36 @@
                 , <&macro_pause_for_release>
                 , <&macro_tap &kp KP_NUM>
                 ;
+        };
+		bt_clr_0: bt_clr_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0 &out OUT_BLE>;
+        };
+		bt_clr_1: bt_clr_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1 &out OUT_BLE>;
+        };	
+		bt_clr_2: bt_clr_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 2 &out OUT_BLE>;
+        };
+		bt_clr_3: bt_clr_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 3 &out OUT_BLE>;
+        };
+		bt_clr_4: bt_clr_4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 4 &out OUT_BLE>;
+        };
+		bt_clr_5: bt_clr_5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 5 &out OUT_BLE>;
         };
     };
 }; 
@@ -585,13 +615,23 @@
 				TRAILING_NONES
 			>;
 		};
-		bt {
+		/*bt {
 			label = "BT";
 			bindings = <
 				LEADING_NONES
 				ARDUX_BT_TOP    &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5
 				MIDDLE_NONES
 				ARDUX_BT_BOTTOM &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2
+				TRAILING_NONES
+			>;
+		};*/
+		bt {
+			label = "BT";
+			bindings = <
+				LEADING_NONES
+				ARDUX_BT_TOP    &bt_clr_3 &bt_clr_4 &bt_clr_5
+				MIDDLE_NONES
+				ARDUX_BT_BOTTOM &bt_clr_0 &bt_clr_1 &bt_clr_2
 				TRAILING_NONES
 			>;
 		};
