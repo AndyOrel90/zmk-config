@@ -355,31 +355,37 @@
                 ;
         };
 		bt_clr_0: bt_clr_0 {
+			label = "bt_clr_0";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 0 &out OUT_BLE>;
         };
 		bt_clr_1: bt_clr_1 {
+			label = "bt_clr_1";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 1 &out OUT_BLE>;
         };	
 		bt_clr_2: bt_clr_2 {
+			label = "bt_clr_2";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 2 &out OUT_BLE>;
         };
 		bt_clr_3: bt_clr_3 {
+			label = "bt_clr_3";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 3 &out OUT_BLE>;
         };
 		bt_clr_4: bt_clr_4 {
+			label = "bt_clr_4";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 4 &out OUT_BLE>;
         };
 		bt_clr_5: bt_clr_5 {
+			label = "bt_clr_5";	
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 5 &out OUT_BLE>;
