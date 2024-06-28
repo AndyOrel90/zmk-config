@@ -293,6 +293,7 @@
 		combo_percent   { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_E>; bindings = <&kp PERCENT>; };
 		combo_plus      { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_Y>; bindings = <&kp PLUS>; };	
 		combo_grave     { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_T KEY_I>; bindings = <&kp GRAVE>; };
+		combo_ctrl_save { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_T>; bindings = <&kp LC(S)>; };
 		/*****************************************
 		 * 3 key combos
 		 *****************************************/
@@ -617,7 +618,7 @@
 				LEADING_NONES
 				&kp PG_UP  &kp PG_DN  &kp HOME    &kp END
 				MIDDLE_NONES
-				&kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
+				&kp LEFT  &kp UP &kp DOWN  &kp RIGHT
 				TRAILING_NONES
 			>;
 		};
