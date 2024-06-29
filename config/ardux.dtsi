@@ -297,7 +297,7 @@
 		combo_grave     { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_T KEY_I>; bindings = <&kp GRAVE>; };
 
 		combo_ctrl_save { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_T>; bindings = <&kp LC(S)>; };
-		combo_ctrl_finnd { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_T KEY_S>; bindings = <&kp LC(F)>; };
+		combo_ctrl_find { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_T KEY_S>; bindings = <&kp LC(F)>; };
 
 		combo_F9 { layers = <LAYER_ID_FUNCTIONS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_R>; bindings = <&kp F9>; };
 		combo_F10 { layers = <LAYER_ID_FUNCTIONS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_T KEY_S>; bindings = <&kp F10>; };
@@ -323,7 +323,7 @@
 		combo_double_quote { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_S KEY_Y KEY_E>; bindings = <&kp DQT>; };
 		combo_qmark        { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_E KEY_R KEY_S>; bindings = <&kp QMARK>; };
 		combo_bt_ldr       { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_R KEY_O>; bindings = <&bootloader>; };
-		combo_ctrl         { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_T KEY_S>; bindings = <&kp QMARK>; };
+		combo_ctrl         { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_T KEY_S>; bindings = <&kp LCTRL>; };
 
 		combo_caps_lock  { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_O KEY_I KEY_E>; bindings = <&kp CAPS>; };
 		//combo_percent  { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_R KEY_T>; bindings = <&kp PERCENT>; };
